@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+  let l1, l2, l3;
+  let kg, g;
+
+  const luoti = 13.3;
+  const naula = 32 * luoti;
+  const leiviska = naula * 20;
+
+  l1 = +prompt('Montako leiviskää');
+  l2 = +prompt('montako naulaa');
+  l3 = +prompt('montako luotia');
+
+  l1 = l1 * leiviska;
+  l2 = l2 * naula;
+  l3 = l3 * luoti;
+
+  g = l1 + l2 + l3;
+  kg = (g / 1000) - (g / 1000 % 1);
+  g = g - kg * 1000;
+  g = g.toFixed(2);
+
+  document.write("Massa nykymittojen mukaan:<br> ");
+  document.write("kilot: ", kg, "<br> grammat: " + g);
+
+</script>
+</body>
+</html>
