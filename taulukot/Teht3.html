@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let nimi = [];
+    let nimet;
+    let maara = 6;
+    confirm("anna kuusi koiran nimeä");
+   for(let i = 0; i < maara; i++){
+       nimet = prompt("koiran nimi");
+       nimi[i] = nimet;
+   }
+    nimi.sort();
+    nimi.reverse();
+    document.write('<ul>');
+
+    for (let i = 0; i < maara; i++) {
+        document.write(('<li>'+ nimi[i] + '</li>'));
+    }
+    //Kirjoita ohjelma, joka kysyy kuuden koiran nimet.
+    //Ohjelma tulostaa koirien nimet numeroimattomaan luetteloon (<ul>) käänteisessä aakkosjärjestyksessä. (3p)
+</script>
+</body>
+</html>

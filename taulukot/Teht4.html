@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict'
+    let num;
+    let ok;
+    let tnum= [];
+
+    ok = confirm("aloita painamalla ok")
+    if (ok === true) {
+        do {
+            num = +prompt("syötä numero(ita). päätä kirjoittamalla 0.");
+            tnum.push(num);
+        } while (num != 0)
+    }
+    tnum.sort( (a,b) => a-b );
+    tnum.reverse();
+    tnum.splice(-1,1);
+    document.write("luvut suurimmasta pienimpään.<br>")
+    document.write("luvut: "+ tnum)
+    //Kirjoita ohjelma, joka kysyy käyttäjältä lukuja, kunnes hän antaa nollan.
+    // Tämän jälkeen annetut luvut tulostetaan suurimmasta pienimpään. (3p)
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let nimi = [];
+    let nimet;
+    let maara = +prompt("osallistujien määrä");
+
+    for(let i = 0; i < maara; i++){
+        nimet = prompt("osallistujan nimi nimi");
+        nimi[i] = nimet;
+    }
+    document.write('<ol>');
+
+    for (let i = 0; i < maara; i++) {
+        document.write(('<li>'+ nimi[i] + '</li>'));
+    }
+   // Kirjoita ohjelma, joka kysyy käyttäjältä osallistujien määrän. Tämän jälkeen ohjelma kysyy kaikkien osallistujen nimet.
+   // Lopuksi ohjelma tulostaa osallistujien nimet web-sivulle numeroituun luetteloon (<ol>) samassa järjestyksessä kuin ne syötettiin. (3p)
+</script>
+</body>
+</html>
