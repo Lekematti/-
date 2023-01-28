@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let hsumma = +prompt("Anna haluamasi arpakuutioiden summa");
+    let nmaara = +prompt("arpakuutioiden lukumäärän");
+    let summa = 0;
+    let noppa
+    let kerrat = 0;
+    let tod = 0;
+    let j;
+    for (j = 1; j < 1000 ; j++) {
+        for (let i = 0; i < nmaara; i++) {
+            noppa = Math.floor(Math.random() * 6) + 1;
+            summa = summa + noppa;
+        }
+            if (summa == hsumma) {
+                kerrat++
+            }
+            summa = 0;
+            tod = kerrat / j * 100;
+    }
+        document.write("<br>arpakuutioiden lukumäärän: " + nmaara);
+        document.write("<br>haluamasi arpakuutioiden summa: " + hsumma);
+        document.write("<br>todennäköisyys: " + tod.toFixed(2) + "%");
+</script>
+
+</body>
+</html>

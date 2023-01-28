@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let text;
+    let luku;
+        text = "You pressed OK!";
+        luku = +prompt("Anna positiivinen luku. Kokeile antaa negatiivinen luku.");
+        while (luku < 0){
+        luku = +prompt("Anna positiivinen luku. Kokeile antaa negatiivinen luku.");
+        }
+        let x = Math.sqrt(luku);
+        document.write("luku "+ luku + "<br> nelijöjuuri on: " + x);
+</script>
+</body>
+</html>

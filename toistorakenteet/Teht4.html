@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let summa = 0;
+    let nmaara = +prompt("kuinka monta noppaa");
+    let noppa
+    for (let i = 0; i < nmaara; i++)
+    {
+        noppa = Math.floor(Math.random()*6)+1;
+        summa = summa + noppa;
+        document.write("nopan silmäluku: "+noppa+"<br><br>")
+    }
+    document.write("<br>noppien määrä: "+ nmaara);
+    document.write("<br>silmälukujen summa: "+ summa);
+</script>
+</body>
+</html>

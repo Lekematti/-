@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let aloitusv = +prompt("Anna aloitusvuosi");
+    let lopetusv = +prompt("Anna lopetusvuosi");
+    document.write('<ul>');
+    for (let i = aloitusv; i <= lopetusv; i++ )
+        if(i % 100 == 0) {
+            if (i % 400 == 0) {
+                document.write('<li>' + i + '</li>');
+            }
+        }
+        else if(i % 4 == 0){
+            document.write('<li>'+ i +'</li>')
+        }
+    document.write('<ul>');
+</script>
+</body>
+</html>

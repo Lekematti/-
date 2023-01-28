@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let isprime = true;
+    let pnumber = +prompt("Anna luku");
+
+    if (pnumber === 1) {
+            document.write("1 ei ole alkuluku eikä yhdistetty numero.");
+        }
+    else if (pnumber > 1) {
+        for (let i = 2; i < pnumber; i++) {
+            if (pnumber % i == 0) {
+                isprime = false;
+                break;
+            }
+        }
+        if (isprime) {
+            document.write(pnumber + ` on alkuluku`);
+        }
+        else {
+            document.write(pnumber + ` ei ole alkuluku`);
+        }
+    }
+    else {
+        document.write("anna positiivinen luku");
+    }
+</script>
+</body>
+</html>
