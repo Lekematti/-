@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let lompakko;
+  let blippu
+
+  lompakko = +prompt('paljonko rahaa lompakossa');
+  blippu = +prompt('bussilipun hinta');
+
+  if (lompakko >= blippu) {
+   lompakko = lompakko - blippu
+    document.write("hyvää matkaa <br>lompakossa rahaa jäljellä "+ lompakko + "€");
+  }
+  else if (lompakko<=blippu){
+    document.write("ei tarpeeki rahaa bussilippuun");
+    document.write("<br>lompakossa rahaa "+ lompakko + "€" + "<br>bussilipun hinta " + blippu + "€");
+  }
+  else {
+    document.write("Error");
+  }
+</script>
+</body>
+</html>

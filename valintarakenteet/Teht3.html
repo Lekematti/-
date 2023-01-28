@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+  let s
+  let gl;
+  const nlow = 117, nhigh = 175;
+  const mlow = 134, mhigh = 195;
+  const mies = 1;
+  const nainen = 2;
+  s = +prompt('sukupuoli: (1 = Mies) (2 = Nainen)');
+  gl = +prompt("hemoglobiini arvo")
+
+
+  if (s === mies && gl < mlow ) {
+      document.write("S: Mies<br>"+ gl +" g/l<br>");
+      document.write("hemoglobiini arvo alhainen");
+  }
+  else if (s === mies && gl > mhigh) {
+      document.write("S: Mies<br>"+ gl +" g/l<br>");
+      document.write("hemoglobiini arvo korkea");
+  }
+  else if (s === mies && (gl > mlow || gl < mhigh)) {
+      document.write("S: Mies<br>"+ gl +" g/l<br>");
+      document.write("hemoglobiini arvo normaali");
+  }
+
+
+  else if (s === nainen && gl < nlow) {
+      document.write("S: Nainen<br>"+ gl +" g/l<br>");
+      document.write("hemoglobiini arvo alhainen");
+  }
+  else if (s === nainen && gl >nhigh) {
+      document.write("S: Nainen<br>"+ gl +" g/l<br>");
+      document.write("hemoglobiini arvo korkea");
+  }
+  else if (s === nainen && (gl > nlow || gl < nhigh)) {
+      document.write("S: Nainen<br>"+ gl +" g/l<br>");
+      document.write("hemoglobiini arvo normaali");
+  }
+
+  else {
+      document.write("Error")
+  }
+
+</script>
+</body>
+</html>

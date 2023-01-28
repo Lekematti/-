@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  'use strict';
+  let text;
+  let luku
+  if (confirm("Lasketaanko neliöjuuri?") == true) {
+    text = "You pressed OK!";
+
+     luku = +prompt("anna luku");
+      if (luku === -luku){
+        document.write("Negatiivisen luvun neliöjuuri ei ole määritelty")
+      }
+      let x = Math.sqrt(luku);
+      document.write("luku "+ luku + "<br> nelijöjuuri on: " + x)
+
+  }
+
+  else {
+    text = "Neliöjuurta ei lasketa";
+    document.write("Neliöjuurta ei lasketa");
+  }
+
+
+  //Kirjoita ohjelma, joka tulostaa tekstin "Lasketaanko neliöjuuri?" varmistusikkunassa.
+     // Jos käyttäjä valitsee OK, ohjelma kysyy luvun ja laskee sekä tulostaa sen neliöjuuren.
+     // Jos käyttäjä valitsee Cancel, ohjelma tulostaa tekstin "Neliöjuurta ei lasketa." (4p)
+
+  //Varmistusikkuna saadaan näkyviin funktiolla window.confirm(). Funktio palauttaa totuusarvon true, jos käyttäjä valitsee OK.
+    //  Jos käyttäjä valitsee Cancel, funktio palauttaa totuusarvon false.
+      //Neliöjuurta ei voi laskea negatiivisesta luvusta.
+      //Jos käyttäjän antama luku on negatiivinen, ohjelma tulostaa "Negatiivisen luvun neliöjuuri ei ole määritelty".
+</script>
+</body>
+</html>

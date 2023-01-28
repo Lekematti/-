@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let P
+  let pituus;
+  pituus = prompt('Kalan pituus cm: ');
+  if (pituus>=37) {
+    document.write("kala on tarpeeksi pitkä<br>");
+    document.write(pituus + "cm")
+  }
+  else if (pituus<=37) {
+    P = 37 - pituus;
+    document.write("kuha on alamittainen, laske kuha takaisin veteen!!!<br>" + "kalan pitäisi olla " + P + "cm " + "pidempi");
+    alert("kuha on alamittainen, laske kuha takaisin veteen!!!\n" + "kalan pitäisi olla " + P + "cm " + "pidempi");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let nimi;
+  let tupa = Math.floor(Math.random() * 4) + 1;
+
+  nimi = prompt('Kerro nimei');
+  if (tupa == 1) {
+      document.write(nimi +", olet rohkelikko");
+  }
+  else if (tupa == 2) {
+      document.write(nimi + ", olet luihuinen");
+  }
+  else if (tupa == 3){
+      document.write(nimi + ", olet puuskupuh");
+  }
+  else if (tupa == 4){
+      document.write(nimi + ", olet korpinkynsi");
+  }
+  else {
+      document.write("Error")
+  }
+</script>
+</body>
+</html>
