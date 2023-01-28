@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function vastaluvuksi(array) {
+        for (let i = 0; i < array.length; i++) {
+            array[i] = array[i] * (-1);
+        }
+        console.log(array);
+    }
+    let num = [];
+    let jono;
+
+    while (jono != ""){
+        jono = prompt("syötä lukuja taulukkoon, anna tyhjä kun haluat lopettaa");
+        num.push(jono);
+    }
+    num.pop();
+    vastaluvuksi(num);
+
+    //Kirjoita funktio vastaluvuksi(), joka saa parametrinaan lukuja sisältävän taulukon.
+    //Funktio muuttaa kaikki taulukon luvut vastaluvuiksi. Funktio ei palauta paluuarvoa (voit tulostaa luvut konsoliin). (3p)
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function parilliset(array) {
+        let pari = [];
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                pari.push(array[i]);
+            }
+        }
+        return pari;
+    }
+    let num = [];
+    let jono;
+    while (jono != ""){
+        jono = prompt('syötä lukuja taulukkoon, anna tyhjä kun haluat lopettaa');
+        num.push(jono);
+    }
+    num.pop();
+    document.write("luvuista parillisia lukuja ovat: " + parilliset(num));
+
+
+    //Kirjoita funktio parilliset(), joka saa parametrinaan lukuja sisältävän taulukon.
+    //Funktio palauttaa toisen (yleensä pienemmän) taulukon, johon on poimittu alkuperäisen taulukon parilliset luvut.
+    //Funktio ei saa tehdä muutoksia alkuperäiseen taulukkoon. (3p)
+</script>
+</body>
+</html>

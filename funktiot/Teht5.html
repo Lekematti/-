@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function liitä(array) {
+        let printti = array.join('');
+        return printti;
+    }
+    let merk = [];
+    let jono;
+    while (jono != ""){
+        jono = prompt("syötä tekstiä taulukkoon, anna tyhjä kun haluat lopettaa");
+        merk.push(jono);
+    }
+    document.write(liitä(merk));
+
+    //Kirjoita funktio liitä(), joka saa parametrinaan merkkijonoja sisältävän taulukon.
+    //Funktio palauttaa merkkijonon, joka on muodostettu liittämällä taulukon alkiot toisiinsa. (2p)
+    //Esimerkki: Kolmialkioisessa taulukossa on alkiot Viivi, Saara ja Yrjö-Pekka. Funktio palauttaa merkkijonon ViiviSaaraYrjö-Pekka.
+</script>
+</body>
+</html>

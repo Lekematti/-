@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function suurin(luku1, luku2, luku3) {
+        let suurin = luku1;
+
+        if (suurin >= luku2 && suurin >= luku3) {
+        suurin = luku1;
+    }
+        else if (suurin <= luku2 && luku2 >= luku3){
+        suurin = luku2;
+    }
+        else if (suurin <= luku3 && luku3 >= luku2){
+        suurin = luku3;
+    }
+    return suurin;
+    }
+
+    let num1, num2, num3;
+    num1 = +prompt("anna ensimmäinen luku");
+    num2 = +prompt("anna toinen luku");
+    num3 = +prompt("anna kolmas luku");
+    let iso = suurin(num1, num2, num3);
+    document.write("antamasi luvut: " + num1 + "," + num2 + "," + num3 + ".<br>")
+    document.write("luvuista suurin on: " + iso);
+
+    //Kirjoita funktio, joka palauttaa kolmesta parametreina saamastaan luvusta suurimman. Kirjoita myös pääohjelma.
+    // joka kysyy käyttäjältä kolme lukua, kutsuu kirjoittamaasi funktiota ja tulostaa paluuarvona saamansa suurimman luvun. (2p)
+</script>
+</body>
+</html>
